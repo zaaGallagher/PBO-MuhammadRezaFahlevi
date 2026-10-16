@@ -3,10 +3,11 @@ package Tugas;
 public class Main {
  public static void main(String[] args) {
         Restoran resto = new Restoran(1, "Restoran Nusantara");
-        
         Menu menu1 = new Menu(101, "Nasi Goreng Special", 25000);
         Menu menu2 = new Menu(102, "Es Teh Manis", 5000);
         Menu menu3 = new Menu(103, "Ayam Bakar Madu", 30000);
+
+        resto.setNama("Restoran Sederhana");
 
         resto.tambahMenu(menu1);
         resto.tambahMenu(menu2);

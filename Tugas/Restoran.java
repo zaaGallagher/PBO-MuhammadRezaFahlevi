@@ -16,9 +16,13 @@ private int idRestoran;
         daftarMenu.add(menu);
     }
 
+    public void setNama(String nama) {
+        namaRestoran = nama;
+    }
+
     public void tampilkanMenu() {
         System.out.println("=== Menu Restoran: " + namaRestoran + " ===");
-        // Menggunakan explicit casting untuk menghindari type mismatch
+        // Menggunakan explicit untuk menghindari type mismatch
         for (Object obj : daftarMenu) {
             Menu m = (Menu) obj;
             System.out.println(m.getDetailMenu());
